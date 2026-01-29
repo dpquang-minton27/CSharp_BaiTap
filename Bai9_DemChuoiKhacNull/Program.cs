@@ -38,14 +38,13 @@ class Program
             }
             else
             {
-                arr[i] = s; // có thể rỗng, sẽ lọc khi đếm
+                arr[i] = s;
             }
         }
 
         int count = 0;
         for (int i = 0; i < arr.Length; i++)
         {
-            // khác null và khác rỗng (và không chỉ toàn khoảng trắng)
             if (arr[i] != null && !string.IsNullOrWhiteSpace(arr[i]))
                 count++;
         }
