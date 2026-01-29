@@ -31,8 +31,7 @@ class Program
         input = input.Trim();
 
         string[] words = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-
-        // Không dùng LINQ => dùng Length
+        
         Console.WriteLine("✅ Số từ: " + words.Length);
     }
 }
