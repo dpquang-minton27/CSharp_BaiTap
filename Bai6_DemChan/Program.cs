@@ -18,7 +18,6 @@ class Program
 
         if (!int.TryParse(nText, out int n) || n < 0)
         {
-            // giữ arr = null để test yêu cầu
             Console.WriteLine("⚠️ n không hợp lệ -> mảng null.");
         }
         else
