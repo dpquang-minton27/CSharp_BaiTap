@@ -21,7 +21,6 @@ class Program
             return;
         }
 
-        // Bỏ khoảng trắng (mạnh hơn: bỏ mọi whitespace như space/tab)
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < input.Length; i++)
         {
@@ -31,9 +30,6 @@ class Program
         }
 
         string s = sb.ToString();
-
-        // Nếu muốn không phân biệt hoa/thường, bật dòng dưới:
-        // s = s.ToLower();
 
         bool isPalindrome = true;
         int left = 0, right = s.Length - 1;
