@@ -19,7 +19,6 @@ class Program
 
         if (string.IsNullOrWhiteSpace(nText) || !int.TryParse(nText, out int n) || n < 0)
         {
-            // để arr null -> đúng yêu cầu "mảng chưa được khởi tạo"
             Console.WriteLine("❌ Lỗi: n không hợp lệ.");
         }
         else
