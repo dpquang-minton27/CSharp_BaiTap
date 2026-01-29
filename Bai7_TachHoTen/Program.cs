@@ -14,7 +14,6 @@ class Program
         Console.Write("Nhập họ tên: ");
         string? input = Console.ReadLine();
 
-        // Chuỗi null -> không tách
         if (input == null)
         {
             Console.WriteLine("⚠️ Chuỗi null -> không tách.");
@@ -23,7 +22,6 @@ class Program
 
         string[]? parts = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
-        // Mảng kết quả null -> không in (thực tế Split không trả null, nhưng vẫn check theo yêu cầu)
         if (parts == null)
         {
             Console.WriteLine("⚠️ Mảng kết quả null -> không in.");
